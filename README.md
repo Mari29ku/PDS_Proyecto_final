@@ -1,6 +1,6 @@
 # PD Proyecto final
 
-Este repositorio contiene los archivos e instrucciones para crear un pipline con la base de datos [The Museum of MOdenr Art(MoMA)](https://github.com/MuseumofModernArt/collection). 
+Este repositorio contiene los archivos e instrucciones para crear un pipline con la base de datos [The Museum of MOdern Art(MoMA)](https://github.com/MuseumofModernArt/collection). 
 
 ### MOMA
 
@@ -16,6 +16,23 @@ En la carpeta `bin` se encuentra el archivo  `descarga_moma.sh` con este se real
 2. Ejecutar
 ```
 ./descarga_moma.sh
+```
+
+### Ambiente virtual
+
+Para crear el ambiente virtual cambiate a la carpeta `MOMA` con 
+
+```
+cd MOMA
+```
+
+Ahora corre los siguientes comandos para crear el ambiente virtual.
+
+```
+pyenv virtualenv 3.7.3 MOMA 
+echo MOMA>.python-version 
+pip install poetry 
+poetry install
 ```
 
 ### Referencias
