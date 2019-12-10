@@ -35,6 +35,31 @@ pip install poetry
 poetry install
 ```
 
+### Postgres (o como sea) ME GUSTA MÁS ORACLE
+
+Para crear la base de datos es necesario ejecutar los siguientes comandos
+
+1. Conectar a postgres
+```
+sudo su postgres
+```
+2. Ejecutar
+```
+psql
+```
+3. Finalmente corremos las siguientes lineas para crear la base de datos y el rol
+```
+create role moma login ;
+alter role moma with encrypted password 'moma_final';
+grant all privileges on database moma to moma;
+```
+4. Regresar al cmd original (ejecutar 2 veces)
+```
+ctrl + d
+```
+
+
+
 ### Referencias
 
 1. La base de datos [MoMA](https://github.com/MuseumofModernArt/collection) [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3558822.svg)](https://doi.org/10.5281/zenodo.3558822)
