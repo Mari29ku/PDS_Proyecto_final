@@ -65,7 +65,7 @@ def load_moma(ctx):
             buffer.seek(0)
             cursor.copy_expert(sql_statement, file=buffer)
 
-@berka.command()
+@moma.command()
 @click.pass_context
 def to_cleaned():
     query = ctx.obj['queries'].get('to_cleaned')
