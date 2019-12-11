@@ -82,13 +82,13 @@ def to_semantic():
     with conn.cursor() as cur:
         cur.execute(query)
 
-@moma.command()
-@click.pass_context
-def create_features():
-    query = ctx.obj['queries'].get('create_features')
-    conn=ctx.obj['conn']
-    with conn.cursor() as cur:
-        cur.execute(query)
+#@moma.command()
+#@click.pass_context
+#def create_features():
+#    query = ctx.obj['queries'].get('create_features')
+#    conn=ctx.obj['conn']
+#    with conn.cursor() as cur:
+#        cur.execute(query)
 
 
 if __name__ == '__main__':

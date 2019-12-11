@@ -2,14 +2,14 @@ drop table if exists cleaned.artists cascade;
 
 create table cleaned.artists as (
 select
-  "ConstituentID" as constituent_id,
-  LOWER("DisplayName") as display_name,
-  LOWER("Nationality") as nationality,
-  case when "Gender" = 'Male' then 'M' else 'F' end as gender,
-  case when "BeginDate" = '0' then NULL else "BeginDate" end as born_year,
-  case when "EndDate" = '0' then NULL else "EndDate" end as death_year,
-  "Wiki QID" as wiki_qid,
-  "ULAN" as ulan from raw.artists
+  "ConstituentID"::int  as constituent_id,
+  LOWER("DisplayName")::varchar as display_name,
+  LOWER("Nationality")::varchar as nationality,
+  case when "Gender" = 'Male' then 'M' else 'F' end::varchar as gender,
+  case when "BeginDate" = '0' then NULL else "BeginDate" end::integer as born_year,
+  case when "EndDate" = '0' then NULL else "EndDate" end::integer as death_year,
+  "Wiki QID"::varchar as wiki_qid,
+  "ULAN"::varchar as ulan from raw.artists
 );
 
 create index cleaned_artists_constituent_id on cleaned.artists (constituent_id);
@@ -36,15 +36,15 @@ select
   "Cataloged"::char as cataloged,
   "URL"::varchar as url,
   "ThumbnailURL" as thumbnail_url,
-  "Circumference (cm)" as circumference_cm,
-  "Depth (cm)" as depth_cm,
-  "Diameter (cm)" as diameter_cm,
-  "Height (cm)" as height_cm,
-  "Length (cm)" as length_cm,
-  "Weight (kg)" as weight_kg,
-  "Width (cm)" as width_cm,
-  "Seat Height (cm)" as seat_height_cm,
-  "Duration (sec.)" as duration_sec
+  case when "Circumference (cm)"='' then Null else "Circumference (cm)" end::decimal  as circumference_cm,
+  case when "Depth (cm)"= '' then Null else "Depth (cm)" end::decimal as depth_cm,
+  case when "Diameter (cm)"= '' then Null else "Diameter (cm)" end::decimal as diameter_cm,
+  case when "Height (cm)"= '' then Null else "Height (cm)" end::decimal as height_cm,
+  case when "Length (cm)"='' then Null else "Length (cm)" end::decimal  as length_cm,
+  case when "Weight (kg)"='' then Null else "Weight (kg)" end::decimal as weight_kg,
+  case when "Width (cm)"='' then Null else "Width (cm)" end::decimal as width_cm,
+  case when "Seat Height (cm)"='' then Null else "Seat Height (cm)" end::decimal as seat_height_cm,
+  case when "Duration (sec.)"='' then NUll else "Duration (sec.)" end::decimal as duration_sec
   from raw.Artworks
 );
 
