@@ -14,55 +14,53 @@ El Museum of Modern Art (MoMA) pone a dispocisión una exhaustiva base de datos 
 Existen dos conjuntos de datos disponibles, el conjunto denominado **Artists** contiene 15,091 registros, que representan a todos los artistas que han trabajado en la colección del MoMA, el segundo conjunto denominado **Artworks** contiene 130,262 registros, que representan todas las obras a las que se ha accedido en la colección del MoMA.
 
 Tabla Artists.
-\begin{table}[]
-\begin{tabular}{ll}
-Variable      & Descripción                         \\
-ConstituentID & Identificador del artista           \\
-DisplayName   & Nombre                              \\
-ArtistBio     & Resumen de la biografía del artista \\
-Nationality   & Nacionalidad                        \\
-Gender        & Genero                              \\
-BeginDate     & Año de nacimiento                   \\
-EndDate       & Año de fallecimiento                \\
-Wiki QID      & Wikidata QID                        \\
-ULAN          & Union List of Artist Names ® (ULAN)
-\end{tabular}
-\end{table}
+
+
+|Variable      | Descripción                         | 
+|--------------|-------------------------------------|
+|ConstituentID | Identificador del artista           |
+|DisplayName   | Nombre                              |
+|ArtistBio     | Resumen de la biografía del artista |
+|Nationality   | Nacionalidad                        |
+|Gender        | Genero                              |
+|BeginDate     | Año de nacimiento                   |
+|EndDate       | Año de fallecimiento                |
+|Wiki QID      | Wikidata QID                        |
+|ULAN          | Union List of Artist Names ® (ULAN) |
 
 Tabla Artworks.
-\begin{table}[]
-\begin{tabular}{ll}
-Title           & Descripción                                 \\
-Artist          & Identificador del artista                   \\
-ConstituentID   & Nombre                                      \\
-ArtistBio       & Resumen de la biografía del artista         \\
-Nationality     & Nacionalidad                                \\
-Gender          & Genero                                      \\
-BeginDate       & Año de nacimiento                           \\
-EndDate         & Año de fallecimiento                        \\
-Date            & Año de creación de la obra                  \\
-Medium          & Material de la obra                         \\
-Dimensions      & Dimensiones de la obra                      \\
-CreditLine      & Linea de crédito de la obra                 \\
-AccessionNumber & Número asignado a la adquisición            \\
-Classification  & Tipo de obra                                \\
-Department      & Departamento de arte                        \\
-DateAcquired    & Año de adquisición de la obra               \\
-Cataloged       & Catalogo de la obra                         \\
-ObjectID        & identificador de la obra                    \\
-URL             & URL de la obra en pagina web de MoMA        \\
-ThumbnailURL    & Thumbnail de la obra en pagina web de MoMA  \\
-Circumferenc    & Circunferencia en cm                        \\
-Depth (cm)      & Profundidad de la obra en cm                \\
-Diameter (cm)   & Diametro en cm                              \\
-Height (cm)     & Altura en cm                                \\
-Length (cm)     & Longitud en cm                              \\
-Weight (kg)     & Peso en kg                                  \\
-Width (cm)      & Anchura en cm                               \\
-Seat Height(cm) & Altura del asiento en cm                    \\
-Duration (sec.) & Duración en segundos
-\end{tabular}
-\end{table}
+
+|Title           | Descripción                                 |
+|----------------|---------------------------------------------|
+|Artist          | Identificador del artista                   |
+|ConstituentID   | Nombre                                      |
+|ArtistBio       | Resumen de la biografía del artista         |
+|Nationality     | Nacionalidad                                |
+|Gender          | Genero                                      |
+|BeginDate       | Año de nacimiento                           |
+|EndDate         | Año de fallecimiento                        |
+|Date            | Año de creación de la obra                  |
+|Medium          | Material de la obra                         |
+|Dimensions      | Dimensiones de la obra                      |
+|CreditLine      | Linea de crédito de la obra                 |
+|AccessionNumber | Número asignado a la adquisición            |
+|Classification  | Tipo de obra                                |
+|Department      | Departamento de arte                        |
+|DateAcquired    | Año de adquisición de la obra               |
+|Cataloged       | Catalogo de la obra                         |
+|ObjectID        | identificador de la obra                    |
+|URL             | URL de la obra en pagina web de MoMA        |
+|ThumbnailURL    | Thumbnail de la obra en pagina web de MoMA  |
+|Circumferenc    | Circunferencia en cm                        |
+|Depth (cm)      | Profundidad de la obra en cm                |
+|Diameter (cm)   | Diametro en cm                              |
+|Height (cm)     | Altura en cm                                |
+|Length (cm)     | Longitud en cm                              |
+|Weight (kg)     | Peso en kg                                  |
+|Width (cm)      | Anchura en cm                               |
+|Seat Height(cm) | Altura del asiento en cm                    |
+|Duration (sec.) | Duración en segundos                        |
+
 
 #### Diagrama Entidad-Relación
 
