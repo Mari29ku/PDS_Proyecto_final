@@ -2,7 +2,7 @@
 
 Este repositorio contiene los archivos e instrucciones para crear un pipline con la base de datos [The Museum of Modern Art(MoMA)](https://github.com/MuseumofModernArt/collection) como parte del proyecto final para la materia Programming for data science. 
 
-###Integrantes de equipo
+##Integrantes de equipo
 
 - Eddie Jr. Lozada Jeronimo 175938, 
 - Francisco Paz Cendejas 175764,
@@ -10,7 +10,7 @@ Este repositorio contiene los archivos e instrucciones para crear un pipline con
 
 ### MOMA
 
-####Descripción de la base de datos
+**Descripción de la base de datos**
 
 El Museum of Modern Art (MoMA) pone a dispocisión una exhaustiva base de datos online que contiene información de instalaciones fotográficas, archivos de instalación y catálogos de exposiciones desde su fundación en 1929, dicha información se encuentra disponible para estudiantes, investigadores y público en general.
 Existen dos conjuntos de datos disponibles, el conjunto denominado **Artists** contiene 15,091 registros, que representan a todos los artistas que han trabajado en la colección del MoMA, el segundo conjunto denominado **Artworks** contiene 130,262 registros, que representan todas las obras a las que se ha accedido en la colección del MoMA.
