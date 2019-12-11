@@ -13,7 +13,7 @@ Este repositorio contiene los archivos e instrucciones para crear un pipline con
 El Museum of Modern Art (MoMA) pone a dispocisión una exhaustiva base de datos online que contiene información de instalaciones fotográficas, archivos de instalación y catálogos de exposiciones desde su fundación en 1929, dicha información se encuentra disponible para estudiantes, investigadores y público en general.
 Existen dos conjuntos de datos disponibles, el conjunto denominado **Artists** contiene 15,091 registros, que representan a todos los artistas que han trabajado en la colección del MoMA, el segundo conjunto denominado **Artworks** contiene 130,262 registros, que representan todas las obras a las que se ha accedido en la colección del MoMA.
 
-Tabla Artists.
+**Tabla Artists.**
 
 
 |Variable      | Descripción                         | 
@@ -28,7 +28,7 @@ Tabla Artists.
 |Wiki QID      | Wikidata QID                        |
 |ULAN          | Union List of Artist Names ® (ULAN) |
 
-Tabla Artworks.
+**Tabla Artworks.**
 
 |Title           | Descripción                                 |
 |----------------|---------------------------------------------|
@@ -48,7 +48,7 @@ Tabla Artworks.
 |Department      | Departamento de arte                        |
 |DateAcquired    | Año de adquisición de la obra               |
 |Cataloged       | Catalogo de la obra                         |
-|ObjectID        | identificador de la obra                    |
+|ObjectID        | Identificador de la obra                    |
 |URL             | URL de la obra en pagina web de MoMA        |
 |ThumbnailURL    | Thumbnail de la obra en pagina web de MoMA  |
 |Circumferenc    | Circunferencia en cm                        |
@@ -62,7 +62,7 @@ Tabla Artworks.
 |Duration (sec.) | Duración en segundos                        |
 
 
-#### Diagrama Entidad-Relación
+### Diagrama Entidad-Relación
 
 
 
