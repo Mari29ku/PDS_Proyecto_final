@@ -11,10 +11,10 @@ Para poder correr el proyecto es necesario tomar en cuenta los siguientes puntos
 	
 * Para asegurarnos del correcto funcionamiento de los comandos, es necesario contar con la maquina virtual [Vagrant](https://github.com/ITAM-DS/programming-for-data-science-2019). En el link puedes encontrar más información.
 * Tener este repositorio clonado de forma local en tu computadora.
-* Seguir las instrucciones para crear el ambiente virtual para ocupar los archivos de python.
+* Seguir las instrucciones para crear el ambiente virtual y ocupar los archivos de python.
 
 
-Una vez conectado a tu maquina virtual, debes clonar este repositorio en tu computadora, para ello debes utilizar el siguiente comando
+Una vez conectado a tu maquina virtual, debes clonar este repositorio, para ello debes utilizar el siguiente comando
 
 ```
 git clone https://github.com/Mari29ku/PDS_Proyecto_final
@@ -53,7 +53,7 @@ pip install poetry
 poetry install
 ```
 
-Ahora que tenemos todas las cofiguraciones necesarias y los datos, procedemos con la creación de la base de datos, para ello usaremos PostgreSQL. Ejecuta los siguientes comandos. 
+Ahora que tenemos todas las cofiguraciones necesarias y los datos, procedemos con la creación de la base de datos, para ello, usaremos PostgreSQL. Ejecuta los siguientes comandos. 
 
 
 1. Conectar a postgres
@@ -71,7 +71,7 @@ create role moma login ;
 alter role moma with encrypted password 'moma_final';
 grant all privileges on database moma to moma;
 ```
-4. Regresar al cmd original (ejecutar 2 veces)
+4. Regresar al shell original (ejecutar 2 veces)
 ```
 ctrl + d
 ```
