@@ -49,6 +49,7 @@ psql
 ```
 3. Finalmente corremos las siguientes lineas para crear la base de datos y el rol
 ```
+CREATE DATABASE moma WITH ENCODING='UTF8' LC_CTYPE='en_US.UTF-8' LC_COLLATE='en_US.UTF-8' OWNER=postgres TEMPLATE=template0 CONNECTION LIMIT=-1;
 create role moma login ;
 alter role moma with encrypted password 'moma_final';
 grant all privileges on database moma to moma;
