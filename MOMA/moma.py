@@ -53,8 +53,6 @@ def create_raw_tables(ctx):
 @click.pass_context
 def load_moma(ctx):
     conn = ctx.obj['conn']
-    print("Veamos la conexion")
-    print(conn)
     cur = conn.cursor()
     with open('../data/artist.csv', 'r') as f:
         reader = csv.reader(f)

@@ -2,7 +2,7 @@ create schema if not exists raw;
 
 -- Creando la tabla raw.artists
 
-drop table if exists raw.artist;
+drop table if exists raw.artists;
 
 create table raw.artists (
   "ConstituentID" TEXT,
