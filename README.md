@@ -66,7 +66,7 @@ Existen dos conjuntos de datos disponibles, el conjunto denominado **Artists** c
 
 ### Diagrama Entidad-Relación
 
-
+![Diagrama\label{entidad_rel}](docs/esquema_entidad_relacion.png)
 
 
 
