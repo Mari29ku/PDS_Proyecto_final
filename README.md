@@ -85,13 +85,35 @@ python moma.py
 ```
 Se despliegan los comandos que se pueden seelecionar:
 
-* create-raw-tables
 * create-schemas
+* create-raw-tables
 * load-moma
 * to-cleaned
 * to-semantic
 
--- Estoy pensando que poner aquí --
+Corre las opciones en el orden mencionado antes, es decir:
+
+```
+python moma.py create-schemas
+```
+
+
+```
+python moma.py create-raw-tables
+```
+
+
+```
+python moma.py load-moma
+```
+
+```
+python moma.py to-cleaned
+```
+
+```
+python moma.py to-semantic
+```
 
 
 ### Referencias
