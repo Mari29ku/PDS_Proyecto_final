@@ -32,10 +32,12 @@ Existen dos conjuntos de datos disponibles, el conjunto denominado **Artists** c
 
 **Tabla Artworks.**
 
-|Title           | Descripción                                 |
+
+|Variable        |Descripción                                  |
 |----------------|---------------------------------------------|
-|Artist          | Identificador del artista                   |
-|ConstituentID   | Nombre                                      |
+|Title           | Titulo de la obra                           |
+|Artist          | Nombre del artista                          |
+|ConstituentID   | Identificador del artista                   |
 |ArtistBio       | Resumen de la biografía del artista         |
 |Nationality     | Nacionalidad                                |
 |Gender          | Genero                                      |
