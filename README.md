@@ -6,6 +6,15 @@ Este repositorio contiene los archivos e instrucciones para crear un pipline con
 
 -- Aquí va la descripción de la base de datos --
 
+
+Para poder correr el proyecto es necesatio seguir las siguientes instrucciones:
+
+Debes clonar este repositorio en tu computadora, para ello debes utilizar el siguiente comando
+
+```
+git clone https://github.com/Mari29ku/PDS_Proyecto_final
+```
+
 En la carpeta `bin` se encuentra el archivo  `descarga_moma.sh` con este se realiza la descarga de los datos. Para poder correrlo es necesario seguir las siguientes instrucciones:
 
 1. Asignar permisos al archivo
