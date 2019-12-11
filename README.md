@@ -1,10 +1,75 @@
-# PD Proyecto final
+# PDS Proyecto final
 
-Este repositorio contiene los archivos e instrucciones para crear un pipline con la base de datos [The Museum of MOdern Art(MoMA)](https://github.com/MuseumofModernArt/collection) como parte del proyecto final para la materia Programming for data science. 
+Este repositorio contiene los archivos e instrucciones para crear un pipline con la base de datos [The Museum of Modern Art(MoMA)](https://github.com/MuseumofModernArt/collection) como parte del proyecto final para la materia Programming for data science. 
+
+**Integrantes de equipo**
+
+- Eddie Jr. Lozada Jeronimo 175938, 
+- Francisco Paz Cendejas 175764,
+- Marissa Martínez García 175901.
 
 ### MOMA
 
--- Aquí va la descripción de la base de datos --
+**Descripción de la base de datos**
+
+El Museum of Modern Art (MoMA) pone a dispocisión una exhaustiva base de datos online que contiene información de instalaciones fotográficas, archivos de instalación y catálogos de exposiciones desde su fundación en 1929, dicha información se encuentra disponible para estudiantes, investigadores y público en general.
+Existen dos conjuntos de datos disponibles, el conjunto denominado **Artists** contiene 15,091 registros, que representan a todos los artistas que han trabajado en la colección del MoMA, el segundo conjunto denominado **Artworks** contiene 130,262 registros, que representan todas las obras a las que se ha accedido en la colección del MoMA.
+
+**Tabla Artists.**
+
+
+|Variable      | Descripción                         | 
+|--------------|-------------------------------------|
+|ConstituentID | Identificador del artista           |
+|DisplayName   | Nombre                              |
+|ArtistBio     | Resumen de la biografía del artista |
+|Nationality   | Nacionalidad                        |
+|Gender        | Genero                              |
+|BeginDate     | Año de nacimiento                   |
+|EndDate       | Año de fallecimiento                |
+|Wiki QID      | Wikidata QID                        |
+|ULAN          | Union List of Artist Names ® (ULAN) |
+
+**Tabla Artworks.**
+
+|Title           | Descripción                                 |
+|----------------|---------------------------------------------|
+|Artist          | Identificador del artista                   |
+|ConstituentID   | Nombre                                      |
+|ArtistBio       | Resumen de la biografía del artista         |
+|Nationality     | Nacionalidad                                |
+|Gender          | Genero                                      |
+|BeginDate       | Año de nacimiento                           |
+|EndDate         | Año de fallecimiento                        |
+|Date            | Año de creación de la obra                  |
+|Medium          | Material de la obra                         |
+|Dimensions      | Dimensiones de la obra                      |
+|CreditLine      | Linea de crédito de la obra                 |
+|AccessionNumber | Número asignado a la adquisición            |
+|Classification  | Tipo de obra                                |
+|Department      | Departamento de arte                        |
+|DateAcquired    | Año de adquisición de la obra               |
+|Cataloged       | Catalogo de la obra                         |
+|ObjectID        | Identificador de la obra                    |
+|URL             | URL de la obra en pagina web de MoMA        |
+|ThumbnailURL    | Thumbnail de la obra en pagina web de MoMA  |
+|Circumferenc    | Circunferencia en cm                        |
+|Depth (cm)      | Profundidad de la obra en cm                |
+|Diameter (cm)   | Diametro en cm                              |
+|Height (cm)     | Altura en cm                                |
+|Length (cm)     | Longitud en cm                              |
+|Weight (kg)     | Peso en kg                                  |
+|Width (cm)      | Anchura en cm                               |
+|Seat Height(cm) | Altura del asiento en cm                    |
+|Duration (sec.) | Duración en segundos                        |
+
+
+### Diagrama Entidad-Relación
+
+
+
+
+
 
 
 Es necesario tomar en cuenta los siguientes puntos, para poder correr el proyecto:
