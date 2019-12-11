@@ -9,9 +9,9 @@ Este repositorio contiene los archivos e instrucciones para crear un pipline con
 
 Para poder correr el proyecto es necesario tomar en cuenta los siguientes puntos:
 	
-	*Para asegurarnos del correcto funcionamiento de los comandos, es necesario contar con la maquina virtual [Vagrant](https://github.com/ITAM-DS/programming-for-data-science-2019). En el link puedes encontrar más información.
-	*Tener este repositorio clonado de forma local en tu computadora.
-	*Seguir las instrucciones para crear el ambiente virtual para ocupar los archivos de python.
+*Para asegurarnos del correcto funcionamiento de los comandos, es necesario contar con la maquina virtual [Vagrant](https://github.com/ITAM-DS/programming-for-data-science-2019). En el link puedes encontrar más información.
+*Tener este repositorio clonado de forma local en tu computadora.
+*Seguir las instrucciones para crear el ambiente virtual para ocupar los archivos de python.
 
 
 Una vez conectado a tu maquina virtual, debes clonar este repositorio en tu computadora, para ello debes utilizar el siguiente comando
