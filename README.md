@@ -85,11 +85,11 @@ python moma.py
 ```
 Se despliegan los comandos que se pueden seelecionar:
 
-.. create-raw-tables
-.. create-schemas
-.. load-moma
-.. to-cleaned
-.. to-semantic
+..* create-raw-tables
+..* create-schemas
+..* load-moma
+..* to-cleaned
+..* to-semantic
 
 -- Estoy pensando que poner aquí --
 
