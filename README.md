@@ -1,6 +1,6 @@
 # PD Proyecto final
 
-Este repositorio contiene los archivos e instrucciones para crear un pipline con la base de datos [The Museum of MOdern Art(MoMA)](https://github.com/MuseumofModernArt/collection). 
+Este repositorio contiene los archivos e instrucciones para crear un pipline con la base de datos [The Museum of MOdern Art(MoMA)](https://github.com/MuseumofModernArt/collection) como parte del proyecto final para la materia Programming for data science. 
 
 ### MOMA
 
