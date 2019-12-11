@@ -35,7 +35,7 @@ pip install poetry
 poetry install
 ```
 
-### Postgres (o como sea) ME GUSTA MÁS ORACLE
+### Postgres 
 
 Para crear la base de datos es necesario ejecutar los siguientes comandos
 
