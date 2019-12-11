@@ -1,6 +1,6 @@
 create schema if not exists raw;
 
-# Creando la tabla raw.artist
+-- Creando la tabla raw.artist
 
 drop table if exists raw.artist;
 
@@ -18,7 +18,7 @@ create table raw.artist (
 
 comment on table raw.artist is 'Contiene informacion de artistas cuyas obras son exhibidas en el MoMA';
 
-# Creando la tabla raw.artwork
+-- Creando la tabla raw.artwork
 
 drop table if exists raw.artwork;
 
