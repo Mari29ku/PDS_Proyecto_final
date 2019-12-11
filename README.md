@@ -65,8 +65,6 @@ Tabla Artworks.
 #### Diagrama Entidad-Relación
 
 
-Length (cm)     & Longitud en cm                              \\
-
 
 
 
