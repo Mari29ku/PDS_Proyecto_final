@@ -84,6 +84,7 @@ Ubicados en la carpeta `MOMA` vamos a correr el script ` moma.py`. Si ejecutas
 python moma.py
 ```
 Se despliegan los comandos que se pueden seelecionar:
+
   	* create-raw-tables
  	* create-schemas
   	* load-moma
