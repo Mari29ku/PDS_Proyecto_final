@@ -1,10 +1,10 @@
 create schema if not exists raw;
 
--- Creando la tabla raw.artist
+-- Creando la tabla raw.artists
 
-drop table if exists raw.artist;
+drop table if exists raw.artists;
 
-create table raw.artist (
+create table raw.artists (
   "ConstituentID" TEXT,
   "DisplayName" TEXT,
   "ArtistBio" TEXT,
@@ -16,13 +16,13 @@ create table raw.artist (
   "ULAN" TEXT
 );
 
-comment on table raw.artist is 'Contiene informacion de artistas cuyas obras son exhibidas en el MoMA';
+comment on table raw.artists is 'Contiene informacion de artistas cuyas obras son exhibidas en el MoMA';
 
--- Creando la tabla raw.artwork
+-- Creando la tabla raw.artworks
 
-drop table if exists raw.artwork;
+drop table if exists raw.artworks;
 
-create table raw.artwork (
+create table raw.artworks (
   "Title" TEXT,
   "Artist" TEXT,
   "ConstituentID" TEXT,
@@ -54,4 +54,4 @@ create table raw.artwork (
   "Duration (sec.)" TEXT
 );
 
-comment on table raw.artwork is 'Contiene informacion de las obras exhibidas en el MoMA';
+comment on table raw.artworks is 'Contiene informacion de las obras exhibidas en el MoMA';

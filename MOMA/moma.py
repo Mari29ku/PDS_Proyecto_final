@@ -1,6 +1,7 @@
 #! /usr/bin/env python
 # -*- coding: utf-8 -*-
 
+import csv
 import psycopg2
 import psycopg2.extras
 
@@ -52,18 +53,13 @@ def create_raw_tables(ctx):
 @click.pass_context
 def load_moma(ctx):
     conn = ctx.obj['conn']
-    with conn.cursor() as cursor:
-        for data_file in Path(settings.get('MOMADIR')).glob('*.asc'):
-            print(data_file)
-            table = data_file.stem
-            print(table)
-            sql_statement = f"copy raw.{table} from stdin with csv header delimiter as ';'"
-            print(sql_statement)
-            buffer = io.StringIO()
-            with open(data_file,'r') as data:
-                buffer.write(data.read())
-            buffer.seek(0)
-            cursor.copy_expert(sql_statement, file=buffer)
+    cur = conn.cursor()
+    with open('../data/artist.csv', 'r') as f:
+        reader = csv.reader(f)
+        next(reader) # Nos saltamos la primer linea (el header).
+        for row in reader:
+            cur.execute("INSERT INTO raw.artist VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s)", row)
+    conn.commit()
 
 @moma.command()
 @click.pass_context
