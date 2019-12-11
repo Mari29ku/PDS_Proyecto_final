@@ -2,7 +2,7 @@
 
 Este repositorio contiene los archivos e instrucciones para crear un pipline con la base de datos [The Museum of Modern Art(MoMA)](https://github.com/MuseumofModernArt/collection) como parte del proyecto final para la materia Programming for data science. 
 
-##Integrantes de equipo
+**Integrantes de equipo**
 
 - Eddie Jr. Lozada Jeronimo 175938, 
 - Francisco Paz Cendejas 175764,
