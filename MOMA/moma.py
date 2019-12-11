@@ -58,7 +58,7 @@ def load_moma(ctx):
         reader = csv.reader(f)
         next(reader) # Nos saltamos la primer linea (el header).
         for row in reader:
-            cur.execute("INSERT INTO raw.artist VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s)", row)
+            cur.execute("INSERT INTO raw.artists VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s)", row)
     conn.commit()
 
 @moma.command()
