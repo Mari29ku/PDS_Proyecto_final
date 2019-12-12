@@ -17,6 +17,8 @@ Existen dos conjuntos de datos disponibles, el conjunto denominado **Artists** c
 
 **Tabla Artists.**
 
+Esta tabla contiene 9 variables. La descripción de cada una de ella se encuentra en la siguiente tabla:
+
 
 |Variable      | Descripción                         | 
 |--------------|-------------------------------------|
@@ -32,6 +34,7 @@ Existen dos conjuntos de datos disponibles, el conjunto denominado **Artists** c
 
 **Tabla Artworks.**
 
+Esta tabla contien 29 variables, con la siguiente descripción:
 
 |Variable        |Descripción                                  |
 |----------------|---------------------------------------------|
@@ -68,11 +71,11 @@ Existen dos conjuntos de datos disponibles, el conjunto denominado **Artists** c
 
 ### Diagrama Entidad-Relación
 
+Con las 2 tablas antes mencionadas, creamos el diagrama de entidad-relación. Notese que vamos de uno (en la tabla Artists ) a muchos (en la tabla Artwrks).
+
 ![Diagrama\label{entidad_rel}](docs/esquema_entidad_relacion.png)
 
-
-
-
+### Proyecto
 
 Es necesario tomar en cuenta los siguientes puntos, para poder correr el proyecto:
 	
@@ -186,3 +189,5 @@ python moma.py to-semantic
 ### Referencias
 
 1. La base de datos [MoMA](https://github.com/MuseumofModernArt/collection) [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3558822.svg)](https://doi.org/10.5281/zenodo.3558822)
+
+2. Notas de la materia [Programming for Data Science 2019](https://github.com/ITAM-DS/programming-for-data-science-2019/blob/master/handbook.pdf)
