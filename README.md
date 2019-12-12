@@ -161,7 +161,7 @@ Se despliegan los comandos que se pueden seelecionar:
 * to-cleaned
 * to-semantic
 
-Corre las opciones en el orden mencionado antes, es decir:
+Corre las opciones en el siguiente orden, es decir:
 
 
 ```
