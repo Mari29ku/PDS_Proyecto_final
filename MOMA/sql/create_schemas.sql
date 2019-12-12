@@ -6,3 +6,6 @@ create schema cleaned;
 
 drop schema if exists semantic cascade;
 create schema semantic;
+
+drop schema if exists cohorts cascade;
+create schema cohorts;
