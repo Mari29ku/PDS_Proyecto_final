@@ -155,7 +155,7 @@ python moma.py
 ```
 Se despliegan los comandos que se pueden seelecionar:
 
-* create-schemas
+* create-schemas:  crea los esquemas necesarios dentro de la base de datos 
 * create-raw-tables
 * load-moma
 * to-cleaned
@@ -163,27 +163,22 @@ Se despliegan los comandos que se pueden seelecionar:
 
 Corre las opciones en el orden mencionado antes, es decir:
 
+
 ```
 python moma.py create-schemas
-```
-
-
-```
 python moma.py create-raw-tables
-```
-
-
-```
 python moma.py load-moma
-```
-
-```
 python moma.py to-cleaned
-```
-
-```
 python moma.py to-semantic
 ```
+
+
+Finalmente utiliza el siguiente comando para revisar las tablas y cambios creados en el proyecto (Password =  `moma_final`)
+```
+psql -U moma -d moma -h 0.0.0.0 -W 
+```
+
+Algunos ejemeplos de las mejoras a la base de datos se pueden ver haciendo:
 
 
 ### Referencias
