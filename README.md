@@ -155,12 +155,11 @@ python moma.py
 ```
 Se despliegan los comandos que se pueden seelecionar:
 
-* create-schemas:  crea los esquemas necesarios dentro de la base de datos, en este caso: 
-⋅⋅⋅ schemas
-* create-raw-tables
-* load-moma
-* to-cleaned
-* to-semantic
+* create-schemas:  crea los esquemas necesarios dentro de la base de datos, en este caso:  raw, cleaned y semantic
+* create-raw-tables: prepara la base de datos para su carga
+* load-moma: realiza la carga de los datos a la base
+* to-cleaned: limpia los datos y les asigna el tipo correcto 
+* to-semantic: crea dos tablas: `Entidad` que en nuestro caso es clasificación y `Eventos` que contiene cuando la obra ingresa al museo. 
 
 
 Corre las opciones en el siguiente orden:
