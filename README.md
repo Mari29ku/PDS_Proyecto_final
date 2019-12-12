@@ -156,11 +156,12 @@ python moma.py
 Se despliegan los comandos que se pueden seelecionar:
 
 * create-schemas:  crea los esquemas necesarios dentro de la base de datos, en este caso: 
-... * schemas
+⋅⋅⋅ *schemas
 * create-raw-tables
 * load-moma
 * to-cleaned
 * to-semantic
+
 
 Corre las opciones en el siguiente orden:
 
