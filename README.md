@@ -179,7 +179,7 @@ Finalmente, utiliza el siguiente comando para revisar las tablas y cambios cread
 psql -U moma -d moma -h 0.0.0.0 -W 
 ```
 
-Algunos ejemeplos de las mejoras a la base de datos se pueden ver haciendo:
+Algunos ejemplos de las mejoras a la base de datos se pueden ver haciendo:
 
 ```
 \d raw.artists;
@@ -188,10 +188,12 @@ Algunos ejemeplos de las mejoras a la base de datos se pueden ver haciendo:
 ```
 SELECT * FROM raw.artists LIMIT 5;
 SELECT * FROM cleaned.artists LIMIT 5;
-```
-```
 SELECT * FROM semantic.events LIMIT 10;
 ```
+
+Se crearon cohorts para obtener las obras de arte por siglo. También se creo un cohort del top 100 de artistas por número de obras publicadas.
+
+![Diagrama\label{cohorts}](docs/cohorts.png)
 
 ### Referencias
 
