@@ -17,6 +17,8 @@ Existen dos conjuntos de datos disponibles, el conjunto denominado **Artists** c
 
 **Tabla Artists.**
 
+Esta tabla contiene 9 variables. La descripción de cada una de ella se encuentra en la siguiente tabla:
+
 
 |Variable      | Descripción                         | 
 |--------------|-------------------------------------|
@@ -32,6 +34,7 @@ Existen dos conjuntos de datos disponibles, el conjunto denominado **Artists** c
 
 **Tabla Artworks.**
 
+Esta tabla contien 29 variables, con la siguiente descripción:
 
 |Variable        |Descripción                                  |
 |----------------|---------------------------------------------|
@@ -68,11 +71,11 @@ Existen dos conjuntos de datos disponibles, el conjunto denominado **Artists** c
 
 ### Diagrama Entidad-Relación
 
+Con las 2 tablas antes mencionadas, creamos el diagrama de entidad-relación. Notese que vamos de uno (en la tabla Artists ) a muchos (en la tabla Artwrks).
+
 ![Diagrama\label{entidad_rel}](docs/esquema_entidad_relacion.png)
 
-
-
-
+### Proyecto
 
 Es necesario tomar en cuenta los siguientes puntos, para poder correr el proyecto:
 	
@@ -152,37 +155,47 @@ python moma.py
 ```
 Se despliegan los comandos que se pueden seelecionar:
 
-* create-schemas
-* create-raw-tables
-* load-moma
-* to-cleaned
-* to-semantic
+* create-schemas:  crea los esquemas necesarios dentro de la base de datos, en este caso:  raw, cleaned y semantic
+* create-raw-tables: prepara la base de datos para su carga
+* load-moma: realiza la carga de los datos a la base
+* to-cleaned: limpia los datos y les asigna el tipo correcto 
+* to-semantic: crea dos tablas: `Entidad` que en nuestro caso es clasificación y `Eventos` que contiene cuando la obra ingresa al museo. 
 
-Corre las opciones en el orden mencionado antes, es decir:
+
+Corre las opciones en el siguiente orden:
+
 
 ```
 python moma.py create-schemas
-```
-
-
-```
 python moma.py create-raw-tables
-```
-
-
-```
 python moma.py load-moma
-```
-
-```
 python moma.py to-cleaned
-```
-
-```
 python moma.py to-semantic
 ```
 
 
+Finalmente, utiliza el siguiente comando para revisar las tablas y cambios creados en el proyecto (Password =  `moma_final`)
+```
+psql -U moma -d moma -h 0.0.0.0 -W 
+```
+
+Algunos ejemeplos de las mejoras a la base de datos se pueden ver haciendo:
+
+```
+\d raw.artists;
+\d cleaned.artists;
+```
+```
+SELECT * FROMraw.artists LIMIT 5;
+SELECT * FROM cleaned.artists LIMIT 5;
+```
+```
+SELECT * FROM semantic.events LIMIT 10;
+SELECT artist_id, COUNT(TRUE) FROM semantic.events GROUP BY artist_id ORDER BY 2 DESC;
+```
+
 ### Referencias
 
 1. La base de datos [MoMA](https://github.com/MuseumofModernArt/collection) [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3558822.svg)](https://doi.org/10.5281/zenodo.3558822)
+
+2. Notas de la materia [Programming for Data Science 2019](https://github.com/ITAM-DS/programming-for-data-science-2019/blob/master/handbook.pdf)
