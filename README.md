@@ -173,12 +173,21 @@ python moma.py to-semantic
 ```
 
 
-Finalmente utiliza el siguiente comando para revisar las tablas y cambios creados en el proyecto (Password =  `moma_final`)
+Finalmente, utiliza el siguiente comando para revisar las tablas y cambios creados en el proyecto (Password =  `moma_final`)
 ```
 psql -U moma -d moma -h 0.0.0.0 -W 
 ```
 
 Algunos ejemeplos de las mejoras a la base de datos se pueden ver haciendo:
+
+```
+\d raw.artists;
+\d cleaned.artists;
+```
+```
+select * from raw.artists limit 5;
+select * from cleaned.artists limit 5;
+```
 
 
 ### Referencias
