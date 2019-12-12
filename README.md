@@ -186,10 +186,13 @@ Algunos ejemeplos de las mejoras a la base de datos se pueden ver haciendo:
 \d cleaned.artists;
 ```
 ```
-select * from raw.artists limit 5;
-select * from cleaned.artists limit 5;
+SELECT * FROMraw.artists LIMIT 5;
+SELECT * FROM cleaned.artists LIMIT 5;
 ```
-
+```
+SELECT * FROM semantic.events LIMIT 10;
+SELECT artist_id, COUNT(TRUE) FROM semantic.events GROUP BY artist_id ORDER BY 2 DESC;
+```
 
 ### Referencias
 
